@@ -1,0 +1,12 @@
+# Python build folders
+__pycache__
+.pytest_cache
+
+# Virtualenv folder
+virtualenv
+
+# IDE config folder
+.vscode
+
+# File with secrets
+config.yaml

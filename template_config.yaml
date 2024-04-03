@@ -1,0 +1,12 @@
+# config.yaml
+
+openweathermap:
+  url: "api.openweathermap.org"
+  city: ""
+  key: ""
+
+influxdb:
+  url: "localhost:8086"
+  token: ""
+  org: ""
+  bucket: ""
