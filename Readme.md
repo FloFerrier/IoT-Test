@@ -4,11 +4,15 @@
 All the following commands are running on a Linux distribution:
 - Ubuntu:22.04
 ### Python virtual environment
-1. Create a Python virtual environment for the project:
+1. Intall the python3-venv package:
+```bash
+$ sudo apt install python3.10-venv`
+``` 
+2. Create a Python virtual environment for the project:
 ```bash
 $ python3 -m venv virtualenv
 ```
-2. Activate this:
+3. Activate this:
 ```bash
 $ source virtualenv/bin/activate
 ```
@@ -37,15 +41,7 @@ $ sudo service influxdb status
 #### Run InfluxDB UI
 Open a browser on the following link:
 - http://localhost:8086/
-#### Install InfluxDB client library
-The InfluxDB client library provides the following InfluxDB API interactions:
-- Query data with the Flux language.
-- Write data to InfluxDB.
-- Batch data in the background.
-- Retry requests automatically on failure.
-```bash
-(virtualenv)$ pip install influxdb-client
-```
+
 ### Grafana OSS
 [Website Link](https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/)
 #### Install Grafana
@@ -86,16 +82,8 @@ $ sudo systemctl restart grafana-server
 #### Run Grafana UI
 Open a browser on the following link:
 - http://localhost:3000/
-## Test Framework
-### Installation
+## Python dependencies
+Install dependencies with this command:
 ```bash
-(virtualenv)$ pip install pytest pytest-mock
-```
-2. Run test suite:
-```bash
-(virtualenv)$ pytest
-```
-## Other dependencies
-```bash
-(virtualenv)$ pip install pyyaml
+(virtualenv)$ pip install -r requirements.txt
 ```

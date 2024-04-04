@@ -53,3 +53,6 @@ class OpenWeatherMap:
         self.attr["data"]["pressure"] = data["main"]["pressure"]
         self.attr["data"]["humidity"] = data["main"]["humidity"]
         return self.attr
+
+if __name__ == "__main__":
+    pass

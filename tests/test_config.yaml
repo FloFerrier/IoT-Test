@@ -1,12 +1,12 @@
-# config.yaml
+# test_config.yaml
 
 openweathermap:
-  url: "api.openweathermap.org"
+  url: ""
   city: ""
   key: ""
 
 influxdb:
-  url: "localhost:8086"
+  url: ""
   token: ""
   org: ""
   bucket: ""

@@ -1,4 +1,3 @@
-import pytest
 from openweathermap import OpenWeatherMap
 
 def test_init_fail(mocker):

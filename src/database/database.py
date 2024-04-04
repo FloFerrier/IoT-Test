@@ -4,6 +4,7 @@ import time
 from influxdb_client.client.write_api import SYNCHRONOUS
 from influxdb_client.domain.write_precision import WritePrecision
 
+'''
 client = influxdb_client.InfluxDBClient(url=url, token=token, org=org)
 write_api = client.write_api(write_options=SYNCHRONOUS)
 
@@ -27,3 +28,7 @@ for index in range(0, 500):
         record_field_keys=["value"])
     write_api.write(bucket=bucket, org=org, record=record)
     time.sleep(1.0)
+'''
+
+if __name__ == "__main__":
+    pass
