@@ -1,9 +1,11 @@
 from config import config_read
 from openweathermap import OpenWeatherMap
 from database import Database
+import os
 
 def main() -> None:
-    config = config_read("config.yaml")
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    config = config_read("{}/config.yaml".format(dir_path))
 
     weather = OpenWeatherMap()
     database = Database()
