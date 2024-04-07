@@ -6,7 +6,7 @@ All the following commands are running on a Linux distribution:
 ### Python virtual environment
 1. Intall the python3-venv package:
 ```bash
-$ sudo apt install python3.10-venv`
+$ sudo apt install python3.10-venv
 ``` 
 2. Create a Python virtual environment for the project:
 ```bash
